@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="results" id="results"></div>
+
+    <script>
+        // Function to get URL parameters
+        function getQueryParams() {
+            var params = new URLSearchParams(window.location.search);
+            return {
+                name: params.get("name"),
+                eng: params.get("eng"),
+                math: params.get("math"),
+                chem: params.get("chem"),
+                phy: params.get("phy"),
+                bio: params.get("bio")
+            };
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var data = getQueryParams();
+            var resultsDiv = document.getElementById("results");
+
+            // Display the results
+            resultsDiv.innerHTML = `
+                <h2>Results for ${data.name}</h2>
+                <p>English: ${data.eng}</p>
+                <p>Math: ${data.math}</p>
+                <p>Chemistry: ${data.chem}</p>
+                <p>Physics: ${data.phy}</p>
+                <p>Biology: ${data.bio}</p>
+                <button onclick="window.location.href='index.html'">Back</button>
+            `;
+        });
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+
+    <div id="results"></div>
+
+    <script>
+        // Function to get URL parameters
+        function getQueryParams() {
+            var params = new URLSearchParams(window.location.search);
+            return {
+                name: params.get("name"),
+                eng: params.get("eng"),
+                math: params.get("math"),
+                chem: params.get("chem"),
+                phy: params.get("phy"),
+                bio: params.get("bio")
+            };
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var data = getQueryParams();
+            var resultsDiv = document.getElementById("results");
+
+            // Display the results
+            resultsDiv.innerHTML = `
+                <h2>Results for ${data.name}</h2>
+                <p>English: ${data.eng}</p>
+                <p>Math: ${data.math}</p>
+                <p>Chemistry: ${data.chem}</p>
+                <p>Physics: ${data.phy}</p>
+                <p>Biology: ${data.bio}</p>
+                <button onclick="window.location.href='index.html'">Back</button>
+            `;
+        });
+    </script>
+
+</body>
+</html>

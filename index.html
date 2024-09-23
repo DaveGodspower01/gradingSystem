@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grading System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <div class="name">
+        <label for="">Name:</label>
+        <input id="name" type="text">
+    </div>
+
+    <h1>
+        Demo Academy 
+    </h1>
+
+    <section>
+        <div class="heading">
+            <div class="subject">
+                <div class="subb">
+                    <h3>Subject</h3>
+                </div>
+                <hr>
+                <div class="sub">
+                    <h3>English</h3>
+                    <h3>Mathematics</h3>
+                    <h3>Chemistry</h3>
+                    <h3>Physics</h3>
+                    <h3>Biology</h3>
+                </div>
+            </div>
+            <div class="ca1">
+                <div>
+                    <h3>1  <sup>st</sup> &nbsp; CA</h3>
+                </div>
+                <hr>
+                <div class="sub">
+                    <input id="eng" type="text">
+                    <input id="math" type="text">
+                    <input id="chem" type="text">
+                    <input id="phy" type="text">
+                    <input id="bio" type="text">
+                </div>
+            </div>
+            <div class="ca2">
+                
+                <div>
+                    <h3>2 <sup>nd</sup> &nbsp; CA</h3>
+                </div>
+
+                <hr>
+
+                <div class="sub">
+                    <input id="eng2" type="text">
+                    <input id="math2" type="text">
+                    <input id="chem2" type="text">
+                    <input id="phy2" type="text">
+                    <input id="bio2" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="btn">
+            <button onclick="cal()">Calculate</button>
+        </div>
+    </section>
+
+    <div class="media">
+        <i class="fa-solid fa-circle-exclamation fa-2xl" style="color: #ff0000;font-size: 80px;"></i>
+        <h3>Use a pc Screen for an optimized experience.</h2>
+    </div>
+
+    <!-- <div class="results" id="results"></div> -->
+
+    <script src="main.js"></script>
+</body>
+</html>
